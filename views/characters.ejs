@@ -23,12 +23,15 @@
                     <table class = "table">
                         <tbody>
                             <%for (let character of data){%>
-                                <tr>
+                                <tr style = "background-color: rgb(120, 163, 0);">
                                     <td><img src = "<%=character.img%>" width = "100px"></td>
                                     <td>
                                         <div>
-                                            <p><%=character.nickname%></p>
-                                            <p><%=character.name%></p>
+                                            <p style = "font-family:'Courier New', Courier, monospace"><%=character.nickname%></p>
+                                            <p style = "font-family:'Courier New', Courier, monospace"><%=character.name%></p>
+                                        </div>
+                                        <div>
+                                            <a style = "text-decoration: none;" href = "http://localhost:5010/characters/<%=character.char_id%>">Details</a>
                                         </div>
                                     </td>
                                 </tr>
